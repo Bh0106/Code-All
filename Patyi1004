@@ -1,0 +1,24 @@
+#include<stdio.h>
+struct student
+{
+	char name[20];
+	char number[20];
+	int score;
+}stu[100];
+int main()
+{
+	int n,max=0,min=0;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		scanf("%s %s %d",stu[i].name,stu[i].number,&stu[i].score);
+	
+		if(stu[max].score<stu[i].score){
+			max=i;
+		}
+		if(stu[min].score>stu[i].score){
+			min=i;
+		}
+    }
+	printf("%s %s\n",stu[max].name,stu[max].number);
+	printf("%s %s",stu[min].name,stu[min].number); 
+}
