@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+int main()
+{
+	char n,m,a[11],b[11];
+	int sum,sum2=0,sum3=0,num1=0,num2=0;
+	scanf("%s %c %s %c",&a,&n,&b,&m);
+	for(int i=0;i<=strlen(a);i++){
+		if(a[i]==n){
+			sum2++;
+		}
+	}
+	for(int i=0;i<=strlen(b);i++){
+		if(b[i]==m){
+			sum3++;
+		}
+	}
+	for(int i=0;i<sum2;i++){
+		num1+=(n-'0')*pow(10,i);
+	}
+	for(int i=0;i<sum3;i++){
+		num2+=(m-'0')*pow(10,i);
+	}
+	sum=num1+num2;
+	printf("%d\n",sum);
+ } 
