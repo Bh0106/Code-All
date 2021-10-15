@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int b[10]={0};
+	for(int i=0;i<10;i++){
+		scanf("%d",&b[i]);
+	}
+	for(int j=1;j<10;j++){
+		if(b[j]){
+			printf("%d",j);
+			b[j]--;
+			break;
+		    }
+		}
+		for(int j=0;j<10;j++){
+			while(b[j]){
+				printf("%d",j);
+				b[j]--;
+			}
+		}
+}
