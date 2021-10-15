@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h> 
+int main()
+{
+	long long n,m=0;
+	char i[100];
+    scanf("%s",i);
+    for(int x=0;x<strlen(i);x++){
+    	m=m+i[x]-'0';
+	}
+	char *py[10]={"ling""yi""er""san""si""wu""liu""qi""ba""jiu"};
+	int a=0,b=0,c=0;
+	if(m>=100){
+		a=m%10;
+		m=m/10;
+		b=m%10;
+		m=m/10;
+		c=m;
+		printf("%s ",py[c]);
+		printf("%s ",py[b]);
+		printf("%S ",py[a]);
+	}
+	else if(m>=10&&m<=99){
+		a=m%10;
+		m=m/10;
+		b=m;
+		printf("%s ",py[b]);
+		printf("%s ",py[a]);
+	}
+	else if(m<=9){
+		a=m;
+		printf("%s ",py[a]);
+	}
+	}
