@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int m,n,g,s,b;
+	scanf("%d",&n);
+	b=n/100;
+	s=n/10%10;
+	g=n%10;
+	for(int i=1;i<=b;i++){
+		printf("B");
+	}
+	for(int i=1;i<=s;i++){
+		printf("S");
+	}
+	for(int i=0;i<g;i++){
+		printf("%d",i+1);
+	}
+}
