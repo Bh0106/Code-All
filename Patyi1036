@@ -4,7 +4,7 @@ int main()
 	int a,i,d,j;
 	char b;
 	scanf("%d %c",&a,&b);
-	d=(int)(a/2.0+0.5);//四舍五入取整
+	d=(int)(a/2.0+0.5);//四舍五入取整(int)(a/b+0.5)
 	for(i=1;i<=d;i++){
 		if(i==1||i==d){
 			for(j=1;j<=a;j++){
